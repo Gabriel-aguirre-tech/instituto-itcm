@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Poppins &familia = Roboto & display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-weight: bolder;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+h1{ font-size: 2.6em; padding-bottom: 10px;}
+h2{ font-size: 2.2em;}
+h3{ font-size: 2.8em;}
+h4{ font-size: 1.8em;}
+h5{font-size: 1.4em;}
+p{ font-size: 1.25em;word-spacing: 2px; font-weight: lighter; }
+
+button{
+    font-size: 1.3em;
+    font-weight:lighter;
+    padding: 2px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+.boton{
+    font-size: 1.7em;
+    padding: ;
+}
+
+button:hover{
+    background-color: rgb(74, 23, 122);
+}
+
+header{
+    background-color: rgb(245,245,245)
+}
+
+.logo{
+    margin-left: 5px;
+    margin: auto;
+    height: 70px;
+    margin: 5px 5px;
+    border-radius: 7px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.nav{
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/imagen-main.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somos-itcm{
+    text-align: center;
+    padding: 200px 12px;
+    background-color: rgb(245,245,245);
+}
+
+#nuestros-cursos{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    padding: 15px 20px;
+}
+
+#nuestros-cursos h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding-bottom: 50px;
+    padding-top: 39px;
+}
+
+.card-group{
+    padding-bottom: 50px;
+}
+
+.institucion{
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.institucion ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    flex-direction: row;
+    list-style-type: none;
+    width: 64px;
+    height: 40px;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+    margin-left: -8px;
+}
+
+footer{
+    background-color: #f8f9fa;
+}
+
+/*comienza nosotros.html, aplicando GRID*/
+
+.grid-layout{
+    padding-top: 15px;
+    background-color: rgb(30,30,30);
+    padding-bottom: 90px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+    text-align: center;
+}
+
+.c1{
+    padding-top: 34px;
+    padding-bottom: 25px;
+}
+
+.c2{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.c3{
+    padding-top: 25px;
+}
+
+.c3 img{
+    height: 250px;
+    width: 350px;
+    border-radius: 4px;
+}
+
+/*comienza beneficios.html, aplicando GRID*/
+
+.grid-beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    padding-bottom: 77px;
+}
+
+.a2, .a4, .a5, .a7, .a8, .a10{
+    border: 1px solid rgb(245,245,245) ;
+    max-width: 384px;
+}
+
+.a3, .a6, .a9{
+    width: auto;
+    height: auto ;
+}
+
+.a3 img, .a6 img, .a9 img{
+    border: 2px solid rgb(245,245,245);
+    padding-left: 0px;
+}
+
+.a1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.a5, .a8{
+    margin-top: 25px;
+}
+
+.a4, .a7, .a10{
+    background-color: rgb(245,245,245);
+    color: black;
+    padding: 0px 10px;
+}
+
+.a4 p, .a7 p, .a10 p{
+    padding-top: 7px;
+}
+
+.a2, .a5, .a8{
+    background-color: #f7f7f7;
+    color: black;
+    width: 384px;
+}
+
+.a2 h2, .a5 h2, .a8 h2{
+    padding-top: 6px;
+}
+
+/*comienza contacto.html, aplicando GRID*/
+
+.grid-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+.b1{
+    padding-top: 52px;
+}
+
+.b2{
+    margin-top: 50px;
+}
+
+.b3, .b5, .b7, .b9{
+    width: 360px;
+    padding: 0px 10px;
+}
+
+.b3, .b5, .b7{
+    height: 42px;
+}
+
+.b9{
+    height: 122px;
+    padding-bottom: 25px;
+}
+
+.b3 input, .b5 input, .b7 input, .b9 input, .b10 button{
+    width: 100%;
+    height: 100%;
+}
+
+.b2, .b4, .b6, .b8, .b10{
+    display: flex;
+    justify-content: flex-start;
+    width: 360px;
+    padding: 0px 10px;
+}
+
+.b2 h2, .b4 h2, .b6 h2, .b8 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+.b4, .b6, .b8{
+    padding-top: 25px;
+}
+
+.b10{
+    padding-bottom: 100px;
+}
+
+/*Primer breakpoint*/
+
+@media (min-width: 768px){
+    #somos-itcm .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-itcm .texto{
+        width: 45%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+        #somos-itcm .img-container{
+            background-image: url(../img/imagen-somos-itcm.jpg);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center center;
+            height: 450px;
+            width: 300px;
+            }
+
+        #nuestros-cursos{
+            display: flex;
+            justify-content: center;
+        }
+
+        .c2{
+            max-width: 500px;
+        }
+
+        .c3 img{
+            width: 500px;
+            height: auto;
+        }
+}
+
+/*Segundo breakpoint*/
+
+@media(min-width: 1024px){
+    #somos-itcm .img-container{
+        height: 450px;
+        width: 400px;
+        }
+
+    #nuestros-cursos .card-group{
+        max-width: 1300px;
+    }
+
+    .card{
+        margin: 25px;
+    }
+
+    .card img{
+        border: 2px solid #f8f9fa;
+    }
+
+/*Comienza nosotros.html*/
+
+    .grid-layout{
+        display: grid;
+        grid-template-areas: "c1 none"
+        "c2  c3";
+    }
+
+    .c1{
+        grid-area: c1;
+    }
+
+    .c2{
+        grid-area: c2;
+    }
+
+    .c3{
+        grid-area: c3;
+        padding-top: 0px;
+        padding-left: 100px;
+    }
+
+    .c3 img{
+        width: 550px;
+        height: auto;
+    }
+
+/*comienza beneficios.html*/
+
+    .grid-beneficios{
+        display: grid;
+        grid-template-areas: "a1 a1"
+        "a2 a3"
+        "a4 a3"
+        "a5 a6"
+        "a7 a6"
+        "a8 a9"
+        "a10 a9";
+    }
+
+    .a1{
+        grid-area: a1;
+    }
+
+    .a2{
+        grid-area: a2;
+    }
+
+    .a3{
+        grid-area: a3;
+    }
+
+    .a4{
+        grid-area: a4;
+    }
+
+    .a5{
+        grid-area: a5;
+    }
+
+    .a6{
+        grid-area: a6;
+        margin-top: 25px;
+    }
+
+    .a7{
+        grid-area: a7;
+    }
+
+    .a8{
+        height: 62px;
+        grid-area: a8;
+    }
+
+    .a9{
+        grid-area: a9;
+        margin-top: 25px;
+    }
+
+    .a10{
+        grid-area: a10;
+    }
+
+    .a2, .a5, .a8{
+        background-color: rgb(210, 210, 210);
+        border: 2px solid white;
+    }
+
+    .a4, .a7, .a10{
+        border: 2px solid white;
+    }
+
+    .a3 img, .a6 img, .a9 img{
+        height: 267px;
+        width: auto;
+        border: 2px solid white;
+    }
+
+    .a9 img{
+        height: 269px;
+    }
+
+    .a2, .a3{
+        margin-top: 30px;
+    }
+
+    .a9, .a10{
+        margin-bottom: 25px;
+    }
+
+    .a5, .a6, .a8, .a9{
+        margin-top: 75px;
+    }
+
+/*comienza contacto.html*/
+
+    .img-contacto{
+        background-image: url(../img/imagen-contacto.jpg);
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        border-radius: 5px;
+        height: 440px;
+        width: 50%;
+        max-width: 750px;
+        margin-top: 90px;
+    }
+
+    .contacto{
+        background-color: rgb(30,30,30);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content:space-evenly;
+        padding-bottom: 25px;
+    }
+}
+
+/*Tercer breakpoint*/
+
+@media(min-width: 1400px){
+    #somos-itcm .img-container{
+        width: 650px;
+        height: 400px;
+    }
+
+    #somos-itcm .texto{
+        padding-left: 50px;
+    }
+
+    .c3 img{
+        width: 750px;
+        height: auto;
+    }
+}
+
+
+
+

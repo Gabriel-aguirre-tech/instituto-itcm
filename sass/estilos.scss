@@ -1,0 +1,288 @@
+@import "variableGlobal";
+@import "operaciones";
+@import "generales";
+@import "index";
+@import "nosotros";
+@import "contacto";
+
+
+
+/*comienza beneficios.html, aplicando GRID*/
+
+.grid-beneficios{
+    @include secundario (rgb(30,30,30), $color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 77px;
+}
+
+.a2, .a4, .a5, .a7, .a8, .a10{
+    border: 1px solid rgb(245,245,245) ;
+    max-width: 384px;
+}
+
+.a3, .a6, .a9{
+    width: auto;
+    height: auto ;
+}
+
+.a3 img, .a6 img, .a9 img{
+    border: 2px solid rgb(245,245,245);
+    padding-left: 0px;
+}
+
+.a1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.a5, .a8{
+    margin-top: 25px;
+}
+
+.a4, .a7, .a10{
+    background-color: rgb(245,245,245);
+    color: $color2;
+    padding: 0px 10px;
+}
+
+.a4 p, .a7 p, .a10 p{
+    padding-top: 7px;
+}
+
+.a2, .a5, .a8{
+    background-color: #f7f7f7;
+    color: $color2;
+    width: 384px;
+}
+
+.a2 h2, .a5 h2, .a8 h2{
+    padding-top: 6px;
+}
+
+
+/*Primer breakpoint*/
+
+@media (min-width: 768px){
+    #somos-itcm .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-itcm .texto{
+        width: 45%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+        #somos-itcm .img-container{
+            background-image: url(../img/imagen-somos-itcm.jpg);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center center;
+            height: 450px;
+            width: 300px;
+            }
+
+        #nuestros-cursos{
+            display: flex;
+            justify-content: center;
+        }
+
+        .c2{
+            max-width: 500px;
+        }
+
+        .c3 img{
+            width: 500px;
+            height: auto;
+        }
+}
+
+/*Segundo breakpoint*/
+
+@media(min-width: 1024px){
+    #somos-itcm .img-container{
+        height: 450px;
+        width: 400px;
+        }
+
+    #nuestros-cursos .card-group{
+        max-width: 1300px;
+    }
+
+    .card{
+        margin: 25px;
+    }
+
+    .card img{
+        border: 2px solid #f8f9fa;
+    }
+
+/*Comienza nosotros.html*/
+
+    .grid-layout{
+        display: grid;
+        grid-template-areas: "c1 none"
+        "c2  c3";
+    }
+
+    .c1{
+        grid-area: c1;
+    }
+
+    .c2{
+        grid-area: c2;
+    }
+
+    .c3{
+        grid-area: c3;
+        padding-top: 0px;
+        padding-left: 100px;
+    }
+
+    .c3 img{
+        width: 550px;
+        height: auto;
+    }
+
+/*comienza beneficios.html*/
+
+    .grid-beneficios{
+        display: grid;
+        grid-template-areas: "a1 a1"
+        "a2 a3"
+        "a4 a3"
+        "a5 a6"
+        "a7 a6"
+        "a8 a9"
+        "a10 a9";
+    }
+
+    .a1{
+        grid-area: a1;
+    }
+
+    .a2{
+        grid-area: a2;
+    }
+
+    .a3{
+        grid-area: a3;
+    }
+
+    .a4{
+        grid-area: a4;
+    }
+
+    .a5{
+        grid-area: a5;
+    }
+
+    .a6{
+        grid-area: a6;
+        margin-top: 25px;
+    }
+
+    .a7{
+        grid-area: a7;
+    }
+
+    .a8{
+        height: 62px;
+        grid-area: a8;
+    }
+
+    .a9{
+        grid-area: a9;
+        margin-top: 25px;
+    }
+
+    .a10{
+        grid-area: a10;
+    }
+
+    .a2, .a5, .a8{
+        background-color: rgb(210, 210, 210);
+        border: 2px solid white;
+    }
+
+    .a4, .a7, .a10{
+        border: 2px solid white;
+    }
+
+    .a3 img, .a6 img, .a9 img{
+        height: 267px;
+        width: auto;
+        border: 2px solid white;
+    }
+
+    .a9 img{
+        height: 269px;
+    }
+
+    .a2, .a3{
+        margin-top: 30px;
+    }
+
+    .a9, .a10{
+        margin-bottom: 25px;
+    }
+
+    .a5, .a6, .a8, .a9{
+        margin-top: 75px;
+    }
+
+/*comienza contacto.html*/
+
+    .img-contacto{
+        background-image: url(../img/imagen-contacto.jpg);
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        border-radius: 5px;
+        height: 440px;
+        width: 50%;
+        max-width: 750px;
+        margin-top: 90px;
+    }
+
+    .contacto{
+        background-color: rgb(30,30,30);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content:space-evenly;
+        padding-bottom: 25px;
+    }
+}
+
+/*Tercer breakpoint*/
+
+@media(min-width: 1400px){
+    #somos-itcm .img-container{
+        width: 650px;
+        height: 400px;
+    }
+
+    #somos-itcm .texto{
+        padding-left: 50px;
+    }
+
+    .c3 img{
+        width: 750px;
+        height: auto;
+    }
+}
+
+
+
+
+
